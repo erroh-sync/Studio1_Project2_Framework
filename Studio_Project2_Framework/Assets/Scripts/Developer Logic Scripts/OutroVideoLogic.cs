@@ -11,20 +11,20 @@ public class OutroVideoLogic : MonoBehaviour {
 	void Start ()
     {
         videoController.PlayVideo(DetermineOutroVideo(videoController.videoClips));
-        GameManager.instance.PlayScore = 0;
+        //GameManager.instance.PlayScore = 0;
 	}
 
     VideoClip DetermineOutroVideo(List<VideoClip> _videoClips)
     {
         //Checks if the players score is above zero and chooses one of the clips based on that.
-        if(GameManager.instance.PlayScore > 0)
-        {
+        //if(GameManager.instance.PlayScore > 0)
+        //{
             return _videoClips[0];
-        }
-        else
-        {
-            return _videoClips[1];
-        }
+        //}
+        //else
+        //{
+            //return _videoClips[1];
+        //}
     }
 	
 }

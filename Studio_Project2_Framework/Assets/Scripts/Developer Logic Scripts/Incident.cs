@@ -12,6 +12,6 @@ public class Incident : MonoBehaviour
     public void Activate()
     {
         //An example of something that an incident card could do when play, currently has no effect, obviously.
-        GameManager.instance.PlayScore += 0;
+        //GameManager.instance.PlayScore += 0;
     }
 }

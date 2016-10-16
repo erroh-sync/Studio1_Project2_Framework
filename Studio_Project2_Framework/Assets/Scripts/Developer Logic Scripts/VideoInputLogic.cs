@@ -28,11 +28,12 @@ public class VideoInputLogic
         Incident currentIncident = GamePlayManager.instance.currentIncident;
 
         //This is where you may compare the current incident card against the current response card and determine a different video.
+        string targetVideoID = currentIncident.ID + currentResponse.ID;
 
         //Loops through the list of video cips to find a match using the videoName.
         for (int index = 0; index < _videoClips.Count; index++)
         {
-            if (_videoClips[index].videoName == currentResponse.VideoID)
+            if (_videoClips[index].videoName == targetVideoID)
             {
                 return _videoClips[index];
             }

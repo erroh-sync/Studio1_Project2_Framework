@@ -13,6 +13,6 @@ public class Response : MonoBehaviour {
     //If your response cards have effects, put them here
     public void Activate()
     {
-        GameManager.instance.PlayScore += points;
+        //GameManager.instance.PlayScore += points;
     }
 }
